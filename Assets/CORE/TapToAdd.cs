@@ -4,8 +4,9 @@ using HoloToolkit.Unity.SpatialMapping;
 using UnityEngine.UI;
 using HoloToolkit.Unity.InputModule;
 using DG.Tweening;
+using UnityEngine.VR.WSA.Input;
 
-public class TapToAdd : MonoBehaviour,IInputClickHandler {
+public class TapToAdd : MonoBehaviour {
 
 	public GameObject goCurrentSelected;
 
@@ -14,6 +15,8 @@ public class TapToAdd : MonoBehaviour,IInputClickHandler {
 	public GameObject goDisplayAdded; 
 
 	public Image goUI_Scan;
+
+	GestureRecognizer recognizer;
 
 	public void AddItem(GameObject g){
 		//TODO customize g
@@ -30,11 +33,17 @@ public class TapToAdd : MonoBehaviour,IInputClickHandler {
 		goUI_Scan.DOFade (0.6f, 5f);
 	}
 
-	void Start(){
+	void OnEnable(){
 	//	AddItem (goCurrentSelected);
+
+		recognizer = new GestureRecognizer();
+
+		recognizer.TappedEvent += OnInputClicked;
+
+		recognizer.StartCapturingGestures();
 	}
 
-	public void OnInputClicked(InputClickedEventData eventData)
+	public void OnInputClicked(InteractionSourceKind source, int tapCount, Ray headRay)
 	{
 		AddItem (goCurrentSelected);
 	}
