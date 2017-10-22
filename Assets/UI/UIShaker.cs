@@ -11,7 +11,7 @@ public class UIShaker : MonoBehaviour {
 	}
 
 	void Shake(){
-		GetComponent<RectTransform> ().DOShakePosition (Random.Range (1.37f, 3.14f),20f).OnComplete (Shake);
+		GetComponent<RectTransform> ().DOShakePosition (Random.Range (1.37f, 3.14f)).OnComplete (Shake);
 	}
 	  
 }
