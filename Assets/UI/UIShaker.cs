@@ -5,8 +5,11 @@ using DG.Tweening;
 using UnityEngine.UI;
 
 public class UIShaker : MonoBehaviour {
+
+	public bool shake = true;
  
 	void Start () {
+		if(shake)
 		Shake ();
 	}
 
