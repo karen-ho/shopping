@@ -13,6 +13,8 @@ public class TapToAdd : MonoBehaviour,IInputClickHandler {
 
 	public GameObject goDisplayAdded; 
 
+	public Image goUI_Scan;
+
 	public void AddItem(GameObject g){
 		//TODO customize g
 		rectBouncingCart.GetComponent<UIShaker> ().StopShake ();
@@ -22,6 +24,10 @@ public class TapToAdd : MonoBehaviour,IInputClickHandler {
 	public void Added(){
 		rectBouncingCart.gameObject.SetActive (false);
 		goDisplayAdded.SetActive (true);
+		goUI_Scan.color = new Color (1, 1, 1, 0);
+		goUI_Scan.transform.parent.gameObject.SetActive (true);
+	
+		goUI_Scan.DOFade (0.6f, 5f);
 	}
 
 	void Start(){
