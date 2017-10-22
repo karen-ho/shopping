@@ -10,7 +10,7 @@ public class UIShaker : MonoBehaviour {
  
 	void Start () {
 		if(shake)
-		Shake ();
+			Shake ();
 	}
 
 	void Shake(){
