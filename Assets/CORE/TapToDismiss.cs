@@ -13,6 +13,8 @@ public class TapToDismiss : MonoBehaviour {
 	public bool firsttime=true;
 	GestureRecognizer recognizer;
 
+	public GameObject goNextItemNotFirstTime;
+
 	void Start(){
 		recognizer = new GestureRecognizer();
 
@@ -51,6 +53,10 @@ public class TapToDismiss : MonoBehaviour {
 	void LoadNextItem(){
 		if (firsttime) {
 			goNextItem.SetActive (true);
+			gameObject.SetActive (false);
+			firsttime = false;
+		} else {
+			goNextItemNotFirstTime.SetActive (true);
 			gameObject.SetActive (false);
 		}
 	}

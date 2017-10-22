@@ -1,6 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using HoloToolkit.Unity.SpatialMapping;
+using UnityEngine.UI;
+using HoloToolkit.Unity.InputModule;
+using DG.Tweening;
+using UnityEngine.VR.WSA.Input;
+using System.Collections;
 
 public class VisaCheckout : MonoBehaviour {
 
@@ -8,7 +13,35 @@ public class VisaCheckout : MonoBehaviour {
 	string URL = "https://mighty-castle-94058.herokuapp.com/api/v1/stores/";
 	string API = "/pay";
 
-   
+	GestureRecognizer recognizer;
+
+	void Start(){
+		recognizer = new GestureRecognizer();
+
+		recognizer.TappedEvent += OnInputClicked;
+
+		recognizer.StartCapturingGestures();
+	}
+
+	void OnEnable(){
+		//	AddItem (goCurrentSelected);
+
+		recognizer = new GestureRecognizer();
+
+		recognizer.TappedEvent += OnInputClicked;
+
+		recognizer.StartCapturingGestures();
+	}
+
+	void OnDisable(){
+		if(recognizer!=null)
+			recognizer.TappedEvent -= OnInputClicked;
+	}
+
+	public void OnInputClicked(InteractionSourceKind source, int tapCount, Ray headRay)
+	{
+		CallCheckout ();
+	}
 
     IEnumerator Checkout()
     {
@@ -34,9 +67,13 @@ public class VisaCheckout : MonoBehaviour {
 	public void CallCheckout(){
 		StartCoroutine (Checkout ());
 	}
-	
-	void Start(){
-	//	CallCheckout ();
+	 
+
+	#if UNITY_EDITOR
+	void Update(){
+		if (Input.GetMouseButtonUp (0))
+			CallCheckout ();
 	}
+	#endif 
 
 }

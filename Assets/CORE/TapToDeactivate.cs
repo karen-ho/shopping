@@ -6,16 +6,11 @@ using HoloToolkit.Unity.InputModule;
 using DG.Tweening;
 using UnityEngine.VR.WSA.Input;
 
-public class TapToConditional : MonoBehaviour {
-
-	public GameObject goMain;
-	public GameObject goList;
-
-	public GameObject goScan;
-
-	public int iteration=0;
-
-	GestureRecognizer recognizer;
+public class TapToDeactivate : MonoBehaviour {
+ 
+	public GameObject goNextItem;  
+	 
+	GestureRecognizer recognizer; 
 
 	void Start(){
 		recognizer = new GestureRecognizer();
@@ -26,7 +21,7 @@ public class TapToConditional : MonoBehaviour {
 	}
 
 	void OnEnable(){
-		//	AddItem (goCurrentSelected);
+	//	AddItem (goCurrentSelected);
 
 		recognizer = new GestureRecognizer();
 
@@ -37,7 +32,7 @@ public class TapToConditional : MonoBehaviour {
 
 	void OnDisable(){
 		if(recognizer!=null)
-			recognizer.TappedEvent -= OnInputClicked;
+		recognizer.TappedEvent -= OnInputClicked;
 	}
 
 	public void OnInputClicked(InteractionSourceKind source, int tapCount, Ray headRay)
@@ -53,18 +48,7 @@ public class TapToConditional : MonoBehaviour {
 	#endif 
 
 	void LoadNextItem(){
-		iteration++;
-		if (iteration == 1) {
-			goList.SetActive (false);
-			goMain.SetActive (true);
-			goScan.SetActive (false);
-
-		} else {
-			goList.SetActive (true);
-			goMain.SetActive (false);
-			goScan.SetActive (false);
-			//goMain.transform.parent.gameObject.SetActive (false);
-		}
+		goNextItem.SetActive (false);
 	}
 
 }

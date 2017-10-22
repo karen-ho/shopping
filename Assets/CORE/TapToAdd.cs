@@ -24,6 +24,8 @@ public class TapToAdd : MonoBehaviour {
 		recognizer.TappedEvent += OnInputClicked;
 
 		recognizer.StartCapturingGestures();
+
+
 	}
 
 

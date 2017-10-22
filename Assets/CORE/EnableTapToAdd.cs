@@ -6,14 +6,11 @@ using HoloToolkit.Unity.InputModule;
 using DG.Tweening;
 using UnityEngine.VR.WSA.Input;
 
-public class TapToConditional : MonoBehaviour {
+public class EnableTapToAdd : MonoBehaviour {
 
-	public GameObject goMain;
-	public GameObject goList;
+	public GameObject goCurrentSelected;
 
-	public GameObject goScan;
-
-	public int iteration=0;
+ 
 
 	GestureRecognizer recognizer;
 
@@ -23,10 +20,12 @@ public class TapToConditional : MonoBehaviour {
 		recognizer.TappedEvent += OnInputClicked;
 
 		recognizer.StartCapturingGestures();
-	}
 
+
+	}
+ 
 	void OnEnable(){
-		//	AddItem (goCurrentSelected);
+	//	AddItem (goCurrentSelected);
 
 		recognizer = new GestureRecognizer();
 
@@ -37,34 +36,24 @@ public class TapToConditional : MonoBehaviour {
 
 	void OnDisable(){
 		if(recognizer!=null)
-			recognizer.TappedEvent -= OnInputClicked;
+		recognizer.TappedEvent -= OnInputClicked;
 	}
 
 	public void OnInputClicked(InteractionSourceKind source, int tapCount, Ray headRay)
 	{
-		LoadNextItem ();
+		goCurrentSelected.SetActive (true);
+		goCurrentSelected.GetComponent<TapToAdd> ().enabled = false;
+		gameObject.SetActive (false);
 	}
 
 	#if UNITY_EDITOR
 	void Update(){
-		if (Input.GetMouseButtonUp (0))
-			LoadNextItem ();
-	}
-	#endif 
-
-	void LoadNextItem(){
-		iteration++;
-		if (iteration == 1) {
-			goList.SetActive (false);
-			goMain.SetActive (true);
-			goScan.SetActive (false);
-
-		} else {
-			goList.SetActive (true);
-			goMain.SetActive (false);
-			goScan.SetActive (false);
-			//goMain.transform.parent.gameObject.SetActive (false);
+		if (Input.GetMouseButtonUp (0)) {
+			goCurrentSelected.SetActive (true);
+			goCurrentSelected.GetComponent<TapToAdd> ().enabled = false;
+			gameObject.SetActive (false);
 		}
 	}
+	#endif 
 
 }
