@@ -13,6 +13,8 @@ public class VisaCheckout : MonoBehaviour {
 	string URL = "https://mighty-castle-94058.herokuapp.com/api/v1/stores/";
 	string API = "/pay";
 
+	public GameObject done;
+
 	GestureRecognizer recognizer;
 
 	void Start(){
@@ -60,8 +62,12 @@ public class VisaCheckout : MonoBehaviour {
         // process result from pay
 		if (www.error == null) {
 			print (www.text);
+
 		} else
 			print (www.error);
+
+		done.SetActive (true);
+		gameObject.SetActive (false);
     }
 
 	public void CallCheckout(){
