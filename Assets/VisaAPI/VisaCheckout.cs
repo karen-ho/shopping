@@ -23,6 +23,7 @@ public class VisaCheckout : MonoBehaviour {
 		recognizer.TappedEvent += OnInputClicked;
 
 		recognizer.StartCapturingGestures();
+		//print (transform.name);
 	}
 
 	void OnEnable(){
