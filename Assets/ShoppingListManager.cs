@@ -33,6 +33,7 @@ public class ShoppingListManager : MonoBehaviour {
 
     public List<string> GetItems()
     {
+        Init();
         return shoppingList;
     }
 }

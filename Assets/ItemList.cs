@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemList : MonoBehaviour {
 
@@ -16,9 +17,11 @@ public class ItemList : MonoBehaviour {
         }
 
         List<string> shoppingList = shoppingListManager.GetItems();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < shoppingList.Count; i++) {
             GameObject go = (GameObject)Instantiate(shoppingItemEntryPrefab);
             go.transform.SetParent(this.transform, false);
+            string name = shoppingList[i];
+            go.transform.Find("Name").GetComponent<Text>().text = name;
         }
 	}
 	
