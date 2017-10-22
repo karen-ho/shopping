@@ -19,11 +19,6 @@ public class ShoppingListManager : MonoBehaviour {
         shoppingList.Add("coffee");
         shoppingList.Add("bananas");
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public string GetItem(int index) {
         Init();
