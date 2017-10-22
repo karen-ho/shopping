@@ -43,6 +43,10 @@ public class TapToAdd : MonoBehaviour {
 		recognizer.StartCapturingGestures();
 	}
 
+	void OnDisable(){
+		recognizer.TappedEvent -= OnInputClicked;
+	}
+
 	public void OnInputClicked(InteractionSourceKind source, int tapCount, Ray headRay)
 	{
 		AddItem (goCurrentSelected);
