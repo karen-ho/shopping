@@ -15486,19 +15486,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\nobat\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\HolographicAcademy-Holograms-101 (1)\\HolographicAcademy-Holograms-101\\Shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
+      "projectUniqueName": "C:\\Users\\nobat\\Documents\\GitHub\\shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
       "projectName": "Assembly-CSharp-firstpass",
-      "projectPath": "C:\\Users\\User\\Desktop\\HolographicAcademy-Holograms-101 (1)\\HolographicAcademy-Holograms-101\\Shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
-      "projectJsonPath": "C:\\Users\\User\\Desktop\\HolographicAcademy-Holograms-101 (1)\\HolographicAcademy-Holograms-101\\Shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\project.json",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\HolographicAcademy-Holograms-101 (1)\\HolographicAcademy-Holograms-101\\Shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\obj\\x86\\Release\\",
+      "projectPath": "C:\\Users\\nobat\\Documents\\GitHub\\shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj",
+      "projectJsonPath": "C:\\Users\\nobat\\Documents\\GitHub\\shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\project.json",
+      "packagesPath": "C:\\Users\\nobat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nobat\\Documents\\GitHub\\shopping\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\obj\\x86\\Release\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nobat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {

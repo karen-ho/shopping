@@ -5,13 +5,13 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-Shopping.sln: 5D5A34001E8B9B66721182155ABEF126
+Shopping.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 Shopping\App.cs: modified
 Shopping\Package.appxmanifest: F13CEA7D97336952C3C3EB011711E3E1
 Shopping\project.json: 1D02BC64BAC0D041019673A1C4C51737
-Shopping\Shopping.csproj: 2D6991EDADC72FAB58CA6C3654D575E5
+Shopping\Shopping.csproj: modified
 Shopping\Shopping.csproj.user: modified
 Shopping\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 Shopping\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

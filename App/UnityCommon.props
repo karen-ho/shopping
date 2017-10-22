@@ -1,6 +1,9 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
+        <UnityWSASolutionName>Shopping</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\nobat\Documents\GitHub\shopping\App\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\nobat\Documents\GitHub\shopping\</UnityProjectDir>
         <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
-        <UnityWSAToolsDir>$(SolutionDir)Unity\Tools\</UnityWSAToolsDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
     </PropertyGroup>
 </Project>

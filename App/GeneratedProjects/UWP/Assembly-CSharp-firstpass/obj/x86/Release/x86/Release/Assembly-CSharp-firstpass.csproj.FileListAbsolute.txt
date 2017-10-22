@@ -16,3 +16,21 @@ C:\Users\User\Desktop\HolographicAcademy-Holograms-101 (1)\HolographicAcademy-Ho
 C:\Users\User\Desktop\HolographicAcademy-Holograms-101 (1)\HolographicAcademy-Holograms-101\Shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\qualifiers.txt
 C:\Users\User\Desktop\HolographicAcademy-Holograms-101 (1)\HolographicAcademy-Holograms-101\Shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\qualifiers.txt.intermediate
 C:\Users\User\Desktop\HolographicAcademy-Holograms-101 (1)\HolographicAcademy-Holograms-101\Shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\bin\x86\Release\Assembly-CSharp-firstpass.dll
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\bin\x86\Release\Assembly-CSharp-firstpass.pdb
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\bin\x86\Release\Assembly-CSharp-firstpass.pri
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\Assembly-CSharp-firstpass.dll
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\Assembly-CSharp-firstpass.pdb
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\priconfig.xml
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\priconfig.xml.intermediate
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\layout.resfiles
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\layout.resfiles.intermediate
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\resources.resfiles
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\resources.resfiles.intermediate
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\pri.resfiles
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\pri.resfiles.intermediate
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\qualifiers.txt
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\qualifiers.txt.intermediate
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\obj\x86\Release\x86\Release\MultipleQualifiersPerDimensionFound.txt

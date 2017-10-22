@@ -1,7 +1,13 @@
 Assembly-CSharp.dll
 UnityEngine.Analytics.dll
+UnityEngine.Timeline.dll
 nunit.framework.dll
 UnityEngine.UI.dll
+DOTween46.dll
 UnityEngine.HoloLens.dll
+DOTween50.dll
+DemiLib.dll
+DOTween43.dll
 UnityEngine.Networking.dll
-UnityEngine.VR.dll
+DOTween.dll
+DOTweenPro.dll

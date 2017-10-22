@@ -1,1 +1,4 @@
-C:\Users\neilg\OneDrive\Documents\GitHub\shopping\App\Shopping\Shopping.csproj;x86
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\nobat\Documents\GitHub\shopping\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\nobat\Documents\GitHub\shopping\App\Shopping\Shopping.csproj;x86
