@@ -13,7 +13,10 @@ public class HoldController : MonoBehaviour {
 
 	HandsTrackingManager htm;
 
-	public ScrollGestureUIFaker sguf;
+	public GameObject goReviews;
+	public GameObject goCenter;
+	public GameObject goCoupons;
+	public int scrollval;
 
 	int handDetected = -1; Vector3 lastp;
 
@@ -48,9 +51,27 @@ public class HoldController : MonoBehaviour {
 		{
 			Vector3 p = htm.trackingObject [htm.lastdetected].transform.position;
 			if (lastp.x < p.x) {
-				sguf.LoadReviews ();
+				scrollval--;
+				if (scrollval < 0)
+					scrollval = 0;
 			}else if (lastp.x > p.x) {
-				sguf.LoadCoupon ();
+				scrollval++;
+				if (scrollval > 2)
+					scrollval = 2;
+			}
+
+			if (scrollval == 0) {
+				goReviews.SetActive (true);
+				goCenter.SetActive (false);
+				goCoupons.SetActive (false);
+			} else if (scrollval == 1) {
+				goReviews.SetActive (false);
+				goCenter.SetActive (true);
+				goCoupons.SetActive (false);
+			} else if (scrollval == 2) {
+				goReviews.SetActive (false);
+				goCenter.SetActive (false);
+				goCoupons.SetActive (true);
 			}
 		}
 	}
