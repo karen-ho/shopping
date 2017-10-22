@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class ItemList : MonoBehaviour {
 
-    public GameObject itemEntryPrefab;
+    public GameObject shoppingItemEntryPrefab;
+
+    ShoppingListManager shoppingListManager;
 
 	// Use this for initialization
 	void Start () {
+        shoppingListManager = GameObject.FindObjectOfType<ShoppingListManager>();
+        if (shoppingListManager == null) {
+            return;
+        }
+
+        List<string> shoppingList = shoppingListManager.GetItems();
         for (int i = 0; i < 2; i++) {
-            GameObject go = (GameObject)Instantiate(itemEntryPrefab);
-            go.transform.SetParent(this.transform);
+            GameObject go = (GameObject)Instantiate(shoppingItemEntryPrefab);
+            go.transform.SetParent(this.transform, false);
         }
 	}
 	

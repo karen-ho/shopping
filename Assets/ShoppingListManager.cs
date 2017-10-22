@@ -30,4 +30,9 @@ public class ShoppingListManager : MonoBehaviour {
 
         return shoppingList[index];
     }
+
+    public List<string> GetItems()
+    {
+        return shoppingList;
+    }
 }
