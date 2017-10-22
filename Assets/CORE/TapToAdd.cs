@@ -28,9 +28,16 @@ public class TapToAdd : MonoBehaviour,IInputClickHandler {
 	//	AddItem (goCurrentSelected);
 	}
 
-	public virtual void OnInputClicked(InputClickedEventData eventData)
+	public void OnInputClicked(InputClickedEventData eventData)
 	{
 		AddItem (goCurrentSelected);
 	}
+
+	#if UNITY_EDITOR
+	void Update(){
+		if (Input.GetMouseButton (0))
+			AddItem (goCurrentSelected);
+	}
+	#endif 
 
 }
