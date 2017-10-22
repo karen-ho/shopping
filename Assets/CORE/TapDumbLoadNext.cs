@@ -8,7 +8,7 @@ using UnityEngine.VR.WSA.Input;
 
 public class TapDumbLoadNext : MonoBehaviour {
  
-	public GameObject goNextItem; 
+	public GameObject goNextItem; public GameObject goNextItem2;
   
 	GestureRecognizer recognizer;
 	 
@@ -50,6 +50,8 @@ public class TapDumbLoadNext : MonoBehaviour {
 
 	void LoadNextItem(){
 		goNextItem.SetActive (true);
+		if (goNextItem2 != null)
+			goNextItem2.SetActive (true);
 		this.gameObject.SetActive (false);
 	}
 
